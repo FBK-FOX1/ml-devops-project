@@ -1,11 +1,11 @@
 .git/
 .venv/
-_pycache_/
+__pycache__/
 *.py[cod]
 data/
 ml/train.py
 ml/configs/
-tests/
+app/tests/
 *.dvc
 *.csv
 .env
