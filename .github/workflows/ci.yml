@@ -23,7 +23,9 @@ jobs:
         run: ruff check .
 
       - name: Run tests
-        run: PYTHONPATH=. pytest app/tests/ -v
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)
+          pytest app/tests/ -v
 
       - name: Build Docker image(CI check)
         run: docker build -t ml-app:ci
