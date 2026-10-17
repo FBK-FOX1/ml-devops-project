@@ -1,0 +1,12 @@
+.git/
+.venv/
+_pycache_/
+*.py[cod]
+data/
+ml/train.py
+ml/configs/
+tests/
+*.dvc
+*.csv
+.env
+README.md
