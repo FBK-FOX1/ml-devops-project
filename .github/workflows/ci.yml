@@ -28,7 +28,7 @@ jobs:
           pytest app/tests/ -v
 
       - name: Build Docker image(CI check)
-        run: docker build -t ml-app:ci
+        run: docker build -t ml-app:ci .
 
   deploy-staging:
     needs: build-and-test
